@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GoEn - ちょうどいい距離感のマッチングアプリ</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f5f5f7;
+            color: #333;
+        }
+        .nav-link {
+            color: #000;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+        .hero-section {
+            height: 100vh;
+            background: linear-gradient(135deg, #0e0d2d, #3e6f9e);
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .hero-section {
+            height: 100vh;
+            background: linear-gradient(135deg, rgba(14, 13, 45, 0.7), rgba(62, 111, 158, 0.7)), 
+                        url('img1.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+        }
+        .hero-section p {
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+        .hero-section .btn {
+            margin-top: 40px;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            background-color: #5cb85c;
+            border: none;
+            color: white;
+        }
+        .feature-section {
+            padding: 60px 0;
+        }
+        .feature-item {
+            text-align: center;
+        }
+        .feature-item img {
+            width: 400px;
+            margin-bottom: 20px;
+        }
+        .showcases {
+            padding: 60px 0;
+            background-color: #0e0d2d;
+            color: #fff;
+        }
+        .pricing-section {
+            padding: 60px 0;
+        }
+        .pricing-card {
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .team-section {
+            padding: 60px 0;
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 150px;
+        }
+        footer {
+            padding: 20px;
+            background-color: #0e0d2d;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+    
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container">
+          <a class="navbar-brand" href="#">
+              <img src="ffffff.png"  alt="GoEn Logo" width="100" height="100" class="d-inline-block align-top img-fluid mt-0">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#background">背景</a>
+                </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#features">特徴</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#showcases">活用事例</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#pricing">サービスプラン</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#evidence">エビデンス</a> <!-- エビデンス項目追加 -->
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#team">チームメンバー</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#faq">FAQ</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <h1 data-aos="fade-up">GoEn - 豊かな時間を共に</h1>
+        <p data-aos="fade-up" data-aos-delay="200">ちょうどいい距離感で、心地よい時間を過ごす。</p>
+        <a href="#" class="btn" data-aos="fade-up" data-aos-delay="400">今すぐ始める</a>
+    </section>
+
+    <!-- Background Section -->
+    <section class="bg-light py-7" id="background">
+      <div class="container overflow-hidden">
+          <div class="row mb-5 align-items-center">
+            <div class="row text-center mt-5 ">
+               <h3 class="mb-4 fs-1 fw-light" data-aos="zoom-in" data-aos-delay="100">GoEnが生まれた背景</h3>
+           </div>
+              <div class="col-lg-12 order-lg-2" data-aos="flip-up" data-aos-delay="300">
+                  <span class="display-3">01</span>
+                  <h3>コロナ禍による社会の変化</h3>
+                  <p>コロナウイルスのパンデミックが世界中に広がり、人々の生活や働き方に大きな影響を与えました。物理的な距離を保つ必要が生まれ、オフラインでの交流が制限され、オンラインでのコミュニケーションが急速に普及しました。仕事や学び、趣味の活動もすべてオンラインにシフトし、物理的な制約を超えた新しいつながりの形が求められました。</p>
+              </div>
+          </div>
+          <div class="row mb-5 align-items-center">
+              <div class="col-lg-12 order-lg-1" data-aos="flip-up" data-aos-delay="300">
+                  <span class="display-3">02</span>
+                  <h3>ポストコロナ時代の「つながり」の再定義</h3>
+                  <p>パンデミックが収束に向かう中で、従来の対面でのつながりだけではなく、オンラインを活用した柔軟なつながりが定着しつつあります。人々は物理的な距離を越えて、自分のライフスタイルや価値観にあった人々と繋がる必要性を感じています。しかし、従来のSNSや一方的な情報発信の手法では、深い交流や価値の共有が難しいことが課題として浮き彫りになりました。ここで「GoEn」のようなサービスが登場し、より深い、価値を感じるつながりの場が求められました。</p>
+              </div>
+          </div>
+          <div class="row mb-5 align-items-center">
+              <div class="col-lg-12 order-lg-2" data-aos="flip-up" data-aos-delay="300">
+                  <span class="display-3">03</span>
+                  <h3>「GoEn」の誕生</h3>
+                  <p>「GoEn」は、ポストコロナ時代の新しいつながり方を提案するサービスです。人々のオンライン上のつながりをより深め、リアルな交流や価値の共有を促進することを目的に開発されました。地理的な制約や時間帯の違いを超えて、価値観や興味に基づいて人々を繋げるプラットフォームとして、コミュニティ感や協力的な交流を育む機能を備えています。
+                  </p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+
+    <!-- Features Section -->
+<section class="feature-section py-5" id="features">
+   <div class="container">
+       <div class="row text-center">
+         <div class="row text-center mt-5 ">
+            <h3 class="mb-4 fs-1 fw-light" data-aos="zoom-in" data-aos-delay="100">GoEnの特徴</h3>
+        </div>
+           <div class="col-md-4 feature-item" data-aos="fade-up">
+               <img src="img2.jpg" alt="Feature 1" stile="img-fluid">
+               <h4>属性マッチング</h4>
+               <p>あなたにぴったりの人と場所を見つける、GoEnならではの革新技術。</p>
+           </div>
+           <div class="col-md-4 feature-item" data-aos="fade-up" data-aos-delay="200">
+               <img src="img3.jpg" alt="Feature 2" stile="img-fluid">
+               <h4>パーソナライズされた体験</h4>
+               <p>企業や飲食店と連携し、ユニークな体験を提供します。</p>
+           </div>
+           <div class="col-md-4 feature-item" data-aos="fade-up" data-aos-delay="400" >
+               <img src="img4.jpg" alt="Feature 3" stile="img-fluid" >
+               <h4>ちょうどいい距離感</h4>
+               <p>SNSやマッチングアプリとは異なる、ゆるやかなつながり。</p>
+           </div>
+       </div>
+
+       <div class="row text-center mt-4">
+           <div class="col-md-4 feature-item" data-aos="fade-up">
+               <img src="img5.jpg" alt="Feature 4" stile="img-fluid">
+               <h4>匿名で安心</h4>
+               <p>匿名だからこそ、心理的な安心感を提供。安心してコミュニケーションを楽しめます。</p>
+           </div>
+           <div class="col-md-4 feature-item" data-aos="fade-up" data-aos-delay="200">
+               <img src="img6.jpg" alt="Feature 5" stile="img-fluid">
+               <h4>フィードバック機能</h4>
+               <p>各セッション終了後にフィードバックを行い、次の体験をより良いものに。</p>
+           </div>
+           <div class="col-md-4 feature-item" data-aos="fade-up" data-aos-delay="400">
+               <img src="img7.jpg" alt="Feature 6" stile="img-fluid">
+               <h4>地域イベント連携</h4>
+               <p>地域自治体と連携し、遠征イベントも展開予定。新しい地域での出会いをサポート。</p>
+           </div>
+       </div>
+   </div>
+</section>
+
+
+    <!-- Evidence Section -->
+    <section class="py-5 bg-light" id="evidence"> <!-- 新しいエビデンスセクション -->
+        <div class="container">
+            <h2 class="section-heading text-center" data-aos="fade-up">エビデンス</h2>
+            <p class="text-center" data-aos="fade-up" data-aos-delay="200">GoEnの活動やサービスが科学的・経済的に証明されている点について。</p>
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-up">
+                    <h4>社会的処方</h4>
+                    <p>社会的処方は、医療と福祉の接点を見つけ出し、孤独やメンタルヘルスに対する治療効果を持っています。GoEnのマッチングは、これを応用し、社会的孤立を減少させるための重要な役割を果たしています。</p>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <h4>認知行動療法 (CBT)</h4>
+                    <p>GoEnのマッチング機能は、認知行動療法の原理を応用し、メンタルヘルスケアの一環として有効です。ユーザーが互いに支援し合うことで、ストレスの軽減や行動の改善が期待されます。</p>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <h4>介護予防効果</h4>
+                    <p>高齢者の社会参加は、介護予防に大きな効果をもたらします。GoEnは、地域社会とのつながりを促進し、高齢者の健康維持を支援します。</p>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <h4>経済効果</h4>
+                    <p>社会的なつながりを強化することは、地域経済にもプラスの影響を与えます。GoEnの取り組みは、ユーザー同士の交流を通じ、地域ビジネスの活性化に寄与します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Showcases Section -->
+<section class="showcases" id="showcases">
+   <div class="container">
+       <h2 class="section-heading text-center" data-aos="fade-up">活用事例</h2>
+       <p class="text-center" data-aos="fade-up" data-aos-delay="200">GoEnの活用事例をご覧ください。</p>
+       <div class="row text-center">
+           <div class="col-md-4" data-aos="fade-up">
+               <img src="img8.jpg" alt="Showcase 1" class="img-fluid">
+               <p>企業のPRイベントに参加して、新しい出会いと体験を。</p>
+           </div>
+           <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+               <img src="img9.jpg" alt="Showcase 2" class="img-fluid">
+               <p>地元の飲食店で、特別な料理を味わいながらのひと時。</p>
+           </div>
+           <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+               <img src="img10.jpg" alt="Showcase 3" class="img-fluid">
+               <p>趣味を通じた集まりで、新しい友達と楽しい時間を過ごす。</p>
+           </div>
+       </div>
+   </div>
+</section>
+
+<!-- Pricing Section -->
+<!-- Price Section -->
+<section class="bg-light py-5" id="price">
+    <div class="container overflow-hidden">
+        <div class="row text-center">
+            <h3 class="mb-4" data-aos="zoom-in" data-aos-delay="100">プランを比較</h3>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3">
+            <!-- Trial Plan -->
+            <div class="col">
+                <div class="card mb-4 shadow-sm" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card-header p-3">
+                        <h4 class="my-0 fw-normal">お試しプラン</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title fs-1"><span class="h4">¥</span>0<span class="h4 text-secondary fw-light">/月</span></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li><i class="bi-check-lg text-success"></i> ご縁とバショ・コトの提供</li>
+                            <li class="text-secondary text-decoration-line-through">無制限の「ご縁」</li>
+                            <li class="text-secondary text-decoration-line-through">セッション時の特別サービス</li>
+                            <li class="text-secondary text-decoration-line-through">地方周遊プラン</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-dark">すぐに試す</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Standard Plan -->
+            <div class="col">
+                <div class="card mb-4 shadow-sm border-dark" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-header py-3 border-dark">
+                        <h4 class="my-0 fw-normal">一般プラン</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title fs-1"><span class="h4">¥</span>1500<span class="h4 text-secondary fw-light">/月（今だけ特別！）</span></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li><i class="bi-check-lg text-success"></i> ご縁とバショ・コトの提供</li>
+                            <li><i class="bi-check-lg text-success"></i> 無制限の「ご縁」</li>
+                            <li class="text-secondary text-decoration-line-through">セッション時の特別サービス</li>
+                            <li class="text-secondary text-decoration-line-through">地方周遊プラン</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-dark">登録・ログイン</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Corporate Plan -->
+            <div class="col">
+                <div class="card mb-4 shadow-sm" data-aos="fade-up" data-aos-delay="150">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">GoEnプラン</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title fs-1"><span class="h4">¥</span>5,000〜<span class="h4 text-secondary fw-light">/月</span></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li><i class="bi-check-lg text-success"></i> ご縁とバショ・コトの提供</li>
+                            <li><i class="bi-check-lg text-success"></i> 無制限の「ご縁」</li>
+                            <li><i class="bi-check-lg text-success"></i> セッション時の特別サービス</li>
+                            <li><i class="bi-check-lg text-success"></i> 地方周遊プラン</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-dark">ご相談ください</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- FAQ Section -->
+<section class="py-5 bg-light" id="faq">
+   <div class="container">
+       <h2 class="section-heading text-center" data-aos="fade-up">よくある質問</h2>
+       <div class="accordion" id="faqAccordion" data-aos="fade-up" data-aos-delay="200">
+           <div class="accordion-item">
+               <h2 class="accordion-header" id="headingOne">
+                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                       GoEnはどのように動作しますか？
+                   </button>
+               </h2>
+               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                   <div class="accordion-body">
+                       GoEnはユーザーの属性に基づいて、場所や体験をマッチさせます。SNSやマッチングアプリとは異なり、ちょうどいい距離感でのつながりを提供します。
+                   </div>
+               </div>
+           </div>
+           <div class="accordion-item">
+               <h2 class="accordion-header" id="headingTwo">
+                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                       料金プランはどのようなものがありますか？
+                   </button>
+               </h2>
+               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                   <div class="accordion-body">
+                       スタンダードプランとプレミアムプランの2つのオプションがあり、それぞれ異なる機能にアクセス可能です。
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</section>
+
+<!-- Team Section -->
+<section class="team-section" id="team">
+   <div class="container">
+       <h2 class="section-heading text-center" data-aos="fade-up">チーム紹介</h2>
+       <div class="row text-center">
+           <div class="col-md-4 team-member" data-aos="fade-up">
+               <img src="Taro.png" alt="Team Member 1" stile="img-fluid">
+               <h4>山田太郎</h4>
+               <p>CEO</p>
+           </div>
+           <div class="col-md-4 team-member" data-aos="fade-up" data-aos-delay="200">
+               <img src="Hanako.png" alt="Team Member 2" stile="img-fluid">
+               <h4>佐藤花子</h4>
+               <p>CTO</p>
+           </div>
+           <div class="col-md-4 team-member" data-aos="fade-up" data-aos-delay="400">
+               <img src="Jiro.png" alt="Team Member 3" stile="img-fluid">
+               <h4>中村次郎</h4>
+               <p>デザイナー</p>
+           </div>
+       </div>
+   </div>
+</section>
+
+
+
+    <!-- Footer -->
+    <footer class="py-3">
+        <p>&copy; 2024 GoEn. All Rights Reserved.</p>
+        <div class="col text-end"><a href="#" class="text-decoration-none text-white"><i
+         class="bi bi-chevron-up" ></i> Back to top</a></div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
